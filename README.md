@@ -3,3 +3,5 @@ This scraper is used to scrape the top 5 headlines of the Student section of DP,
 
 # Schedule Explanation
 The initial cron expression 0 20 * * * means my job runs at 20:00 UTC every day. The five fields are minute, hour, day of month, month, and day of week.
+
+Now, I changed it to 0 0,4,8,12,16,20 * * * so that I scrape every four hours, since students would want to know the events immediately when it happens
