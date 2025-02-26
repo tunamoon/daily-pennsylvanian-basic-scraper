@@ -29,7 +29,7 @@ def scrape_data_point():
 
     if req.ok:
         soup = bs4.BeautifulSoup(req.text, "html.parser")
-        articles = soup.find_all("a", class_="row section-article", limit=5)
+        articles = soup.find_all("h3", class_="standard-link", limit=5)
         headlines = [article.get_text(strip=True) for article in articles]
         loguru.logger.info(f"Scraped {len(headlines)} headlines: {headlines}")
         return headlines if headlines else []
