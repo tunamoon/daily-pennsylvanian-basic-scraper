@@ -64,7 +64,8 @@ if __name__ == "__main__":
 
     # Save data
     if data_point:
-        dem.add_today(data_point)
+        for headline in data_point:
+            dem.add_today(headline)
         dem.save()
         loguru.logger.info("Saved daily student event monitor")
 
