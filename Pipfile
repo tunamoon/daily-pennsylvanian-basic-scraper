@@ -7,8 +7,8 @@ verify_ssl = true
 bs4 = "*"
 loguru = "*"
 pytz = "*"
-requests = "*"
 waybackpy = "*"
+requests = "*"
 
 [dev-packages]
 ipykernel = "*"
